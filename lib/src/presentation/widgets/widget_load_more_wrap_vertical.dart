@@ -125,9 +125,7 @@ class WidgetLoadMoreWrapVerticalState<T>
 
   Widget loadingProgress() {
     return Center(
-      child: WidgetCircleProgress(
-        color: widget.loadingColor,
-        colorBackground: widget.loadingColorBackground,
+      child: WidgetLoading(
       ),
     );
   }
@@ -138,10 +136,7 @@ class WidgetLoadMoreWrapVerticalState<T>
       child: new Center(
         child: new Opacity(
           opacity: isPerformingRequest ? 1.0 : 0.0,
-          child: WidgetCircleProgress(
-            color: widget.loadingColor,
-            colorBackground: widget.loadingColorBackground,
-          ),
+          child: WidgetLoading()
         ),
       ),
     );

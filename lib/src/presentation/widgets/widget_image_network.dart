@@ -32,7 +32,7 @@ class WidgetImageNetwork extends StatelessWidget {
       width: width,
       height: height,
       placeholder: (_, __) => Center(
-        child: WidgetCircleProgress(),
+        child: WidgetLoading(),
       ),
       imageBuilder: (_, image) {
         switch (shape) {
